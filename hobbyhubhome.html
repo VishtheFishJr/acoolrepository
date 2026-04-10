@@ -84,19 +84,24 @@
             margin: 10px 0;
         }
 
+        /* Bigger login button */
+        .btn-login {
+            padding: 18px 44px;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
         }
 
-        /* Divider */
         .divider {
-            margin: 20px 0;
+            margin: 25px 0;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #94a3b8;
-            font-size: 0.95rem;
         }
 
         .divider::before,
@@ -105,10 +110,13 @@
             flex: 1;
             height: 1px;
             background: rgba(255, 255, 255, 0.2);
-            margin: 0 10px;
+            margin: 0 12px;
         }
 
+        /* Bigger Active Clubs text */
         .divider span {
+            font-size: 1.3rem;
+            font-weight: 600;
             text-decoration: underline;
         }
 
@@ -125,20 +133,17 @@
     <div class="container">
         <h1>Hobby Hub</h1>
         <p>
-            A premium space to learn, practice, and master hobbies like cardistry.
+            A premium space to learn, practice, and master hobbies.
             Join challenges, improve your skills, and compete with creators worldwide.
         </p>
 
-        <!-- New Login Button -->
-        <a class="btn" href="#">Log In / Create Account</a>
+        <a class="btn btn-login" href="#">Log In / Create Account</a>
 
-        <!-- Divider -->
         <div class="divider"><span>Active Clubs</span></div>
 
-        <!-- Existing Button -->
         <a class="btn" href="hobbyhub.html">Enter Cardistry Club</a>
 
-        <div class="tag">Navy Blue • Silver • Skill-Based Community</div>
+        <div class="tag">A Skill-Based Community with People Like You</div>
     </div>
 
 </body>
