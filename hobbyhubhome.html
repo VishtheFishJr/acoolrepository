@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobby Hub</title>
-    <link rel="icon" href="/favicon.ico?v=2">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -27,7 +26,6 @@
             overflow: hidden;
         }
 
-        /* shiny overlay effect */
         body::before {
             content: "";
             position: absolute;
@@ -83,11 +81,35 @@
             text-decoration: none;
             transition: 0.3s ease;
             box-shadow: 0 0 20px rgba(192, 192, 192, 0.3);
+            margin: 10px 0;
         }
 
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Divider */
+        .divider {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 0 10px;
+        }
+
+        .divider span {
+            text-decoration: underline;
         }
 
         .tag {
@@ -107,9 +129,16 @@
             Join challenges, improve your skills, and compete with creators worldwide.
         </p>
 
+        <!-- New Login Button -->
+        <a class="btn" href="#">Log In / Create Account</a>
+
+        <!-- Divider -->
+        <div class="divider"><span>Active Clubs</span></div>
+
+        <!-- Existing Button -->
         <a class="btn" href="hobbyhub.html">Enter Cardistry Club</a>
 
-        <div class="tag">A Skill-Based Community with People for You</div>
+        <div class="tag">Navy Blue • Silver • Skill-Based Community</div>
     </div>
 
 </body>
